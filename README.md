@@ -26,3 +26,5 @@ ou se preferir:
 ### demais comandos :
 
 #### `yarn lint`
+
+#### `yarn test`

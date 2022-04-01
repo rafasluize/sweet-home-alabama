@@ -18,6 +18,7 @@ const Input: FC<InputProps> = ({ label, name, value, onChange, placeholder, maxL
       name={name}
       id={name}
       type={type}
+      data-testid="test-input"
       onChange={(e: FormEvent<HTMLTextAreaElement | HTMLInputElement>) => onChange(e.currentTarget.value)}
       value={value}
       maxLength={maxLength}

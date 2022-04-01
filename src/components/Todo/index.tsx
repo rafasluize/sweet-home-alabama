@@ -8,8 +8,8 @@ import Item from './Item';
 import List from './styled';
 
 const Todo: FC = () => {
-  const [todoList, setTodoList] = useState<string[]>([]);
   const [value, setValue] = useState<string>('');
+  const [todoList, setTodoList] = useState<string[]>([]);
 
   const handleClickAdd = () => {
     if (value) {
@@ -36,20 +36,18 @@ const Todo: FC = () => {
         <Button variant="add" onClick={handleClickAdd} />
       </Styled.DFlex>
 
-      {todoList.length > 0 ? (
-        <List>
-          {todoList.map((item, key) => (
-            <Item
-              value={item}
-              handleRemove={(index: number) => handleRemove(index)}
-              key={item + Math.random()}
-              index={key}
-            />
-          ))}
-        </List>
-      ) : (
-        <EmptyState />
-      )}
+      <List>
+        {todoList.map((item, key) => (
+          <Item
+            value={item}
+            handleRemove={(index: number) => handleRemove(index)}
+            key={item + Math.random()}
+            index={key}
+          />
+        ))}
+      </List>
+
+      {todoList.length < 1 && <EmptyState />}
     </Box>
   );
 };

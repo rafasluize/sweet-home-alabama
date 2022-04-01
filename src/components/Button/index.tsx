@@ -5,7 +5,13 @@ import * as Styled from './styled';
 import { TVariant } from './type';
 
 const Button: FC<{ variant: TVariant; onClick: () => void }> = ({ variant, onClick }) => (
-  <Styled.Button variant={variant} type="button" onClick={onClick}>
+  <Styled.Button
+    variant={variant}
+    type="button"
+    onClick={onClick}
+    role="button"
+    data-testid={variant === 'add' ? 'button-add' : 'button-remove'}
+  >
     {variant === 'add' && <img src={add} alt="Adicionar item" />}
     {variant === 'remove' && <img src={remove} alt="Remover item" />}
   </Styled.Button>

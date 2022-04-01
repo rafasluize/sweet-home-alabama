@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Empty state snapshot 1`] = `
+.c0 {
+  height: 280px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 1px dashed #cccccc;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: #606060;
+  -webkit-animation-name: eqcHHR;
+  animation-name: eqcHHR;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+<div
+  class="c0"
+>
+  Nenhum item cadastrado
+</div>
+`;

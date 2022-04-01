@@ -8,7 +8,7 @@ const Item: FC<{ value: string; handleRemove: (i: number) => void; index: number
   handleRemove,
   index,
 }) => (
-  <Styled.Item>
+  <Styled.Item data-testid="item-list">
     {value}
 
     <Button variant="remove" onClick={() => handleRemove(index)} />

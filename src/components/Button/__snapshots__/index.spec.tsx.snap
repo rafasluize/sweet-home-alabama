@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button snapshot 1`] = `
+.c0 {
+  border: none;
+}
+
+<button
+  class="c0"
+  data-testid="button-remove"
+  role="button"
+  type="button"
+>
+  <img
+    alt="Remover item"
+    src="test"
+  />
+</button>
+`;
