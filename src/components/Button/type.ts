@@ -1,1 +1,1 @@
-export type VariantType = 'add' | 'remove';
+export type TVariant = 'add' | 'remove';

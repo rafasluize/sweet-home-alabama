@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { VariantType } from './type';
+import { TVariant } from './type';
 
-export const Button = styled.button<{ variant: VariantType }>`
+export const Button = styled.button<{ variant: TVariant }>`
   ${({ variant }) =>
     variant &&
     variant === 'add' &&
@@ -11,10 +11,10 @@ export const Button = styled.button<{ variant: VariantType }>`
         width: 24px;
         height: 24px;
       }
+      border-radius: 100px;
+      width: 48px;
+      height: 48px;
     `}
-  border-radius: 100px;
-  width: 48px;
-  height: 48px;
   border: none;
 `;
 

@@ -23,10 +23,6 @@ ou se preferir:
 
 #### `yarn start`
 
-### Para gerar o build :
+### demais comandos :
 
-#### `npm run build`
-
-ou
-
-#### `yarn build`
+#### `yarn lint`
